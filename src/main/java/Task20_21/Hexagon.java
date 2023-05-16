@@ -1,4 +1,4 @@
-package Task20;
+package Task20_21;
 
 public class Hexagon extends Shape {
     private final int a;
