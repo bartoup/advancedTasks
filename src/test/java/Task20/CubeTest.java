@@ -18,7 +18,7 @@ class CubeTest {
         assertThat(result).isEqualTo(24);
     }
     @Test
-    
+
     void shouldCalculateVolumeOfCube(){
         //given
         Shape3D cube = new Cube(2);
@@ -26,6 +26,17 @@ class CubeTest {
         double result = cube.calculateVolume();
         //then
         assertThat(result).isEqualTo(8);
+    }
+
+    @Test
+
+    void shouldCheckFillMethod(){
+        //given
+        Shape3D cube = new Cube(2);
+        //when
+        double result = cube.fill(2);
+        //then
+        assertThat(result).isEqualTo(-1);
     }
 
 }
